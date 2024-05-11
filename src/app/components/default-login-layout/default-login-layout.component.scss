@@ -20,6 +20,12 @@ main {
     background-color: $secondary-color;
   }
 
+  @media screen and (max-width: 800px) {
+    .main-section{
+      display: none;
+    }
+  }
+
   .form-section {
     flex-grow: 0.3;
     padding: 0 35px;
