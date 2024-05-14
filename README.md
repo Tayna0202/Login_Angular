@@ -5,13 +5,12 @@
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
 <p align="center">
-<img src="/src/Tela_login.jpg" width="500px"></img>
-<img src="/src/Tela_cadastro.jpg" width="500px"></img>
+<img src="/src/Tela_login.jpg" width="400px"></img>
+<img src="/src/Tela_cadastro.jpg" width="400px"></img>
 </p>
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
@@ -49,10 +48,14 @@ git clone https://github.com/Tayna0202/Login_Angular.git
 cd pagina-login
 ```
 
-## Executar o projeto
+# Executar o projeto (Front-End)
 ```bash
 npm start
 ```
+
+# Executar o projeto (Back-End)
+## Na IDE de preferência abra o pasta "back-end_pagina_login"
+## Execute o application
 
 # Rotas de aplicação 📍 
 
