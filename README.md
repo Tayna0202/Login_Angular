@@ -1,27 +1,59 @@
-# PaginaLogin
+<h1 align="center" style="font-weight: bold;">Página de Login e Cadastro Angular 👩‍💻</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+[Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+[Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+[Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+[HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-## Development server
+<p align="center">
+<img src="/src/Tela_login.jpg" width="400px"></img>
+<img src="/src/Tela_cadastro.jpg" width="400px"></img>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
-## Code scaffolding
+## 📌 Sobre o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Projeto desenvolvido com Angular (Front-End) e Java (Back-End)
+Página de Login e Cadastro de usuários, com validações e autenticações
 
-## Build
+- Angular 17
+- Spring Web
+- JPA
+- Spring Boot Dev Tools
+- Spring Security
+- Lombok
+- Utilização de Token para autenticação
+- AuthGuard para proteção da rota de usuários
+- Banco de dados usado H2 (Banco temporário apenas para testes)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Pré-requisitos
 
-## Running unit tests
+Git2
+CLI angular
+Angular 17
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Clone o projeto
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/Tayna0202/Login_Angular.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Abrir o projeto
 
-## Further help
+```bash
+cd pagina-login
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Executar o projeto
+```bash
+npm start
+```
+
+# Rotas de aplicação 📍 
+
+| route               | description                                          
+|----------------------|-----------------------------------------------------
+| <kbd>/login</kbd>     | página para fazer login
+| <kbd>/cadastro</kbd>     | página para fazer cadastro
+| <kbd>/user</kbd>     | página exibida apenas com usuário autenticado
