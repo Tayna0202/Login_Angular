@@ -44,6 +44,7 @@ export class LoginComponent {
         next: () => this.toastService.success('Login feito com sucesso!'),
         error: () => this.toastService.error('Error! Tente novamente'),
       });
+    this.router.navigate(['user']);
   }
 
   navigate() {

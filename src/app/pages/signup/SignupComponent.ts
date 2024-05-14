@@ -10,6 +10,7 @@ import { PrimaryInputComponent } from '../../components/primary-input/primary-in
 import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
+import { subscribeOn } from 'rxjs';
 
 @Component({
   selector: 'app-signup',
@@ -29,7 +30,7 @@ export class SignupComponent {
 
   constructor(private router: Router, private loginService: LoginService) {
     this.signupForm = new FormGroup({
-      nome: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [
         Validators.required,
@@ -44,11 +45,16 @@ export class SignupComponent {
 
   submit() {
     this.loginService
-      .login(this.signupForm.value.email, this.signupForm.value.password)
+      .signup(
+        this.signupForm.value.name,
+        this.signupForm.value.email,
+        this.signupForm.value.password
+      )
       .subscribe({
-        next: () => this.toastService.success('Login feito com sucesso!'),
+        next: () => this.toastService.success('Cadastro feito com sucesso!'),
         error: () => this.toastService.error('Error! Tente novamente'),
       });
+    this.router.navigate(['login']);
   }
 
   navigate() {

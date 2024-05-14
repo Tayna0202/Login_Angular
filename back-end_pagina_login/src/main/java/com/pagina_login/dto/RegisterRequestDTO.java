@@ -1,2 +1,3 @@
-package com.pagina_login.dto;public record RegisterRequestDTO() {
-}
+package com.pagina_login.dto;
+
+public record RegisterRequestDTO(String name, String email, String password) { }
